@@ -4,7 +4,6 @@ numpy
 opencv-python-headless
 easyocr
 psutil
-python-Levenshtein
 pillow
 python-multipart
 Levenshtein
