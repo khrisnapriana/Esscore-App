@@ -22,6 +22,8 @@ async def evaluate(file: UploadFile = File(...), key_answers: str = Form(...)):
 
         results, total_nilai = evaluate_answers(image, key_answers_dict)
 
+        logger.info(f"Nilai: {total_nilai}")
+
         return {"results": results, "total_nilai": total_nilai}
 
     except Exception as e:
